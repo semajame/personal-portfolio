@@ -39,6 +39,7 @@
 </template>
 
 <script>
+import unorkImg from "/src/assets/unork.png";
 export default {
   data() {
     return {
@@ -47,7 +48,7 @@ export default {
 
       projects: [
         {
-          projectImage: "/src/assets/unork.png",
+          projectImage: unorkImg,
           projectTitle: "Unork Agency Website",
           projectAbout:
             "The website is an agency that turns dreams into reality and helps your business grow, this website focuses on user interface and user experience with navigation ease. ",
