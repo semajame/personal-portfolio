@@ -5,25 +5,18 @@
         <h2>Contact</h2>
         <span>📧</span>
       </div>
-      <span>Want to talk about your next project?</span>
+      <span>{{ contactPara }}</span>
     </div>
-    <div class="contacts">
-      <div>
-        <img src="../assets/gmail.png" alt="Gmail Icon" class="contact__icon" />
-        <div class="contact__email">
-          <span>Email: </span>
-          <span>jamesanquillano@gmail.com</span>
-        </div>
-      </div>
+    <div class="contacts" v-for="(items, index) in contacts" :key="index">
       <div>
         <img
-          src="../assets/phone-call.png"
-          alt="Phone Icon"
+          :src="items.contactImage"
+          :alt="items.contactAlt"
           class="contact__icon"
         />
         <div class="contact__email">
-          <span>Phone: </span>
-          <span>09369533064</span>
+          <span>{{ items.spanOne }} </span>
+          <span>{{ items.spanTwo }}</span>
         </div>
       </div>
     </div>
@@ -31,7 +24,29 @@
 </template>
 
 <script>
-export default {};
+import gmailImage from "/src/assets/gmail.png";
+import phoneCallImage from "/src/assets/phone-call.png";
+export default {
+  data() {
+    return {
+      contactPara: "Want to talk about your next project?",
+      contacts: [
+        {
+          contactImage: gmailImage,
+          contactAlt: "Gmail Icon",
+          spanOne: "Email:",
+          spanTwo: "jamesanquillano@gmail.com",
+        },
+        {
+          contactImage: phoneCallImage,
+          contactAlt: "Phone Icon",
+          spanOne: "Phone:",
+          spanTwo: "09369533064",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style></style>
