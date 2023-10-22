@@ -1,7 +1,7 @@
 <template>
   <section class="about__container" id="about">
     <div class="left__about laptop">
-      <img src="src/assets/memoji.png" alt="Memoji" class="memoji" />
+      <img src="../assets/memoji.png" alt="Memoji" class="memoji" />
     </div>
     <div class="right__about">
       <div>
