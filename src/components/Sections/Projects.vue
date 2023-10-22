@@ -20,6 +20,15 @@
             <div class="right__project">
               <h3>{{ items.projectTitle }}</h3>
               <p>{{ items.projectAbout }}</p>
+
+              <div class="project__techstack">
+                <img
+                  :src="tech.img"
+                  alt="Tech Stack"
+                  v-for="(tech, index) in items.projectTech"
+                  :key="index"
+                />
+              </div>
               <div class="project__links">
                 <a :href="items.projectLink" target="_blank"
                   >Live Demo <img src="/src/assets/arrow.svg" alt="Demo Arrow"
@@ -49,6 +58,14 @@ export default {
           projectAbout:
             "The website is an agency that turns dreams into reality and helps your business grow, this project focuses on user interface and user experience with navigation ease. ",
           projectLink: "https://unork-agency-website.vercel.app/",
+          projectTech: [
+            {
+              img: "https://skillicons.dev/icons?i=vuejs",
+            },
+            {
+              img: "https://skillicons.dev/icons?i=css",
+            },
+          ],
         },
         {
           projectImage: techTalkImg,
@@ -56,6 +73,17 @@ export default {
           projectAbout:
             "The website is blog about technology, let's you surf on multiple blogs, this project focuses on user interface, and blog information with its own small database.",
           projectLink: "https://techtalk-blog.vercel.app/",
+          projectTech: [
+            {
+              img: "https://skillicons.dev/icons?i=vuejs",
+            },
+            {
+              img: "https://skillicons.dev/icons?i=scss",
+            },
+            {
+              img: "https://skillicons.dev/icons?i=bootstrap",
+            },
+          ],
         },
       ],
     };

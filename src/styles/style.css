@@ -321,7 +321,7 @@ h3 {
 }
 
 .project__links {
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .project__links a {
@@ -348,6 +348,18 @@ h3 {
 .project__links a:hover {
   box-shadow: 0px 0px 5px 0px rgba(133, 129, 129, 0.712);
   transition: 200ms;
+}
+
+.project__techstack {
+  display: flex;
+  margin: 1rem 0;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.project__techstack img {
+  width: 35px;
+  height: 35px;
 }
 
 /* CONTACTS */
