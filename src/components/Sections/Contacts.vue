@@ -9,11 +9,7 @@
     </div>
     <div class="contacts">
       <div>
-        <img
-          src="src/assets/gmail.png"
-          alt="Gmail Icon"
-          class="contact__icon"
-        />
+        <img src="../assets/gmail.png" alt="Gmail Icon" class="contact__icon" />
         <div class="contact__email">
           <span>Email: </span>
           <span>jamesanquillano@gmail.com</span>
@@ -21,7 +17,7 @@
       </div>
       <div>
         <img
-          src="src/assets/phone-call.png"
+          src="../assets/phone-call.png"
           alt="Phone Icon"
           class="contact__icon"
         />
