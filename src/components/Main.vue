@@ -1,0 +1,160 @@
+<template>
+  <header>
+    <div class="left__header">
+      <a href="#" class="logo" v-scrollto="'home'">James.dev</a>
+    </div>
+    <div class="right__header">
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="#"
+              v-for="(links, index) in navLinks"
+              :key="index"
+              v-scrollto="links.scrollTo"
+            >
+              {{ links.link }}
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="home">
+    <div class="hero__container">
+      <div class="left__main">
+        <h1>Front-End Web <br />Developer</h1>
+        <p>
+          {{ heroParagraph }}
+        </p>
+      </div>
+      <div class="right__main">
+        <img src="src/assets/profile.jpg" alt="Profile" />
+      </div>
+    </div>
+    <div class="tech__stack__container">
+      <div class="tech__stack">
+        <span> Tech Stack </span>
+        <span>|</span>
+        <div
+          class="tech__flex"
+          v-for="(stack, stackIndex) in techStack"
+          :key="stackIndex"
+        >
+          <div>
+            <img
+              :src="item.img"
+              alt="Images"
+              v-for="(item, index) in stack.images"
+              :key="index"
+            />
+          </div>
+
+          <div>
+            <img
+              :src="item.img"
+              alt="Images"
+              v-for="(item, index) in stack.imagesTwo"
+              :key="index"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <About id="about" />
+  <Projects id="projects" />
+  <Contacts id="contact" />
+</template>
+
+<script>
+import Header from "./Header.vue";
+import About from "../components/Sections/About.vue";
+import Projects from "../components/Sections/Projects.vue";
+import Contacts from "../components/Sections/Contacts.vue";
+
+const scrollToDirective = {
+  mounted(el, binding) {
+    el.addEventListener("click", (event) => {
+      event.preventDefault();
+      const targetId = binding.value;
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        const offset = 100; // You can adjust this value for your desired margin or padding
+        const scrollTo = targetElement.offsetTop - offset;
+
+        window.scrollTo({
+          behavior: "smooth",
+          top: scrollTo,
+        });
+      }
+    });
+  },
+};
+
+export default {
+  directives: {
+    scrollto: scrollToDirective,
+  },
+
+  components: {
+    Header,
+    About,
+    Projects,
+    Contacts,
+  },
+
+  data() {
+    return {
+      navLinks: [
+        {
+          link: "About",
+          scrollTo: "about",
+        },
+        {
+          link: "Projects",
+          scrollTo: "projects",
+        },
+        {
+          link: "Contact",
+          scrollTo: "contact",
+        },
+      ],
+
+      heroParagraph:
+        "  Hi! I'm James Anquillano. A passionate Front-End Developer based in Cebu Philippines. 📍",
+
+      techStack: [
+        {
+          images: [
+            {
+              img: "https://skillicons.dev/icons?i=html",
+            },
+            {
+              img: "https://skillicons.dev/icons?i=css",
+            },
+            {
+              img: "https://skillicons.dev/icons?i=js",
+            },
+          ],
+
+          imagesTwo: [
+            {
+              img: "https://skillicons.dev/icons?i=bootstrap",
+            },
+            {
+              img: "https://skillicons.dev/icons?i=scss",
+            },
+            {
+              img: "https://skillicons.dev/icons?i=vuejs",
+            },
+          ],
+        },
+      ],
+    };
+  },
+};
+</script>
+<style></style>
