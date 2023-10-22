@@ -29,7 +29,7 @@
         </p>
       </div>
       <div class="right__main">
-        <img src="src/assets/profile.jpg" alt="Profile" />
+        <img src="../assets/profile.jpg" alt="Profile" />
       </div>
     </div>
     <div class="tech__stack__container">
