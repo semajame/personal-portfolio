@@ -54,7 +54,7 @@ export default {
       projects: [
         {
           projectImage: unorkImg,
-          projectTitle: "Unork Agency Website",
+          projectTitle: "Unork Agency",
           projectAbout:
             "The website is an agency that turns dreams into reality and helps your business grow, this project focuses on user interface and user experience with navigation ease. ",
           projectLink: "https://unork-agency-website.vercel.app/",
