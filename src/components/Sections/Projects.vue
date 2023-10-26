@@ -71,7 +71,7 @@ export default {
           projectImage: techTalkImg,
           projectTitle: "TechTalk Blog",
           projectAbout:
-            "The website is blog about technology, let's you surf on multiple blogs, this project focuses on user interface, and blog information with its own small database.",
+            "The website is a blog about technology, it let's you surf  blogs, this project focuses on user interface, and blog information with its own small local database.",
           projectLink: "https://techtalk-blog.vercel.app/",
           projectTech: [
             {
