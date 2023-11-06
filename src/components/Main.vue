@@ -1,11 +1,13 @@
 <template>
   <header>
     <div class="left__header">
-      <a href="#" class="logo" v-scrollto="'home'">James.dev</a>
+      <a href="#" class="logo" v-scrollto="'home'" @click="toggleLogo"
+        >James.dev</a
+      >
     </div>
     <div class="right__header">
       <nav>
-        <ul>
+        <ul id="ul">
           <li>
             <a
               href="#"
@@ -19,6 +21,15 @@
         </ul>
       </nav>
     </div>
+
+    <label class="hamburger__container">
+      <input type="checkbox" @click="toggleActive" id="checkbox" />
+      <div class="checkmark">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </label>
   </header>
   <main id="home">
     <div class="hero__container">
@@ -104,6 +115,26 @@ export default {
     About,
     Projects,
     Contacts,
+  },
+
+  methods: {
+    toggleActive() {
+      const ul = document.querySelector("#ul");
+      ul.classList.toggle("active");
+      console.log("click");
+    },
+
+    toggleLogo() {
+      const ul = document.querySelector("#ul");
+      const checkbox = document.querySelector("#checkbox");
+      checkbox.checked = false;
+      ul.classList.remove("active");
+    },
+
+    created() {
+      const ul = document.querySelector("#ul");
+      ul.addEventListener("click", this.toggleActive, this.toggleLogo);
+    },
   },
 
   data() {
