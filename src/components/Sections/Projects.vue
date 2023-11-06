@@ -18,7 +18,9 @@
               class="project__image"
             />
             <div class="right__project">
-              <h3>{{ items.projectTitle }}</h3>
+              <h3>
+                {{ items.projectTitle }} <span>{{ items.projectSoon }}</span>
+              </h3>
               <p>{{ items.projectAbout }}</p>
 
               <div class="project__techstack">
@@ -70,6 +72,7 @@ export default {
         {
           projectImage: techTalkImg,
           projectTitle: "TechTalk Blog",
+          projectSoon: "(Coming Soon)",
           projectAbout:
             "A website blog about technology, and let's you surf blogs, this project focuses on user friendly interface.",
           projectLink: "https://techtalk-blog.vercel.app/",
