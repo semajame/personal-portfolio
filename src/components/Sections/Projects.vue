@@ -94,7 +94,7 @@ export default {
           projectTitle: "Grand Standard",
           projectSoon: "(Coming Soon)",
           projectAbout:
-            "A website blog about technology, and let's you surf blogs, this project focuses on user friendly interface.",
+            "A hotel website that the user can browse rooms, and dines. This project focuses on UI",
           projectLink: "https://grand-standard-hotel.vercel.app/",
           projectTech: [
             {
