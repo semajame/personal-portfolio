@@ -47,6 +47,7 @@
 <script>
 import unorkImg from "/src/assets/unork.png";
 import techTalkImg from "/src/assets/techtalk.png";
+import hotelImg from "/src/assets/hotel.png";
 export default {
   data() {
     return {
@@ -85,6 +86,22 @@ export default {
             },
             {
               img: "https://skillicons.dev/icons?i=bootstrap",
+            },
+          ],
+        },
+        {
+          projectImage: hotelImg,
+          projectTitle: "Grand Standard",
+          projectSoon: "(Coming Soon)",
+          projectAbout:
+            "A website blog about technology, and let's you surf blogs, this project focuses on user friendly interface.",
+          projectLink: "https://grand-standard-hotel.vercel.app/",
+          projectTech: [
+            {
+              img: "https://skillicons.dev/icons?i=vuejs",
+            },
+            {
+              img: "https://skillicons.dev/icons?i=scss",
             },
           ],
         },
