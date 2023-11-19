@@ -48,6 +48,7 @@
 import unorkImg from "/src/assets/unork.png";
 import techTalkImg from "/src/assets/techtalk.png";
 import hotelImg from "/src/assets/hotel.png";
+import starbsImg from "/src/assets/starbucks.png";
 export default {
   data() {
     return {
@@ -59,7 +60,7 @@ export default {
           projectImage: unorkImg,
           projectTitle: "Unork Agency",
           projectAbout:
-            "The website is an agency that turns dreams into reality and helps your business grow, this project focuses on user interface and user experience with navigation ease. ",
+            "The website is an agency that turns dreams into reality and helps your business grow. This project focuses on user interface and user experience with navigation ease. ",
           projectLink: "https://unork-agency-website.vercel.app/",
           projectTech: [
             {
@@ -94,7 +95,7 @@ export default {
           projectTitle: "Grand Standard",
           projectSoon: "(Coming Soon)",
           projectAbout:
-            "A hotel website that the user can browse rooms, and dines. This project focuses on UI",
+            "A hotel website that the user can browse rooms, and dines. This project focuses on user interfaces and medium flow of the website.",
           projectLink: "https://grand-standard-hotel.vercel.app/",
           projectTech: [
             {
@@ -102,6 +103,24 @@ export default {
             },
             {
               img: "https://skillicons.dev/icons?i=scss",
+            },
+          ],
+        },
+        {
+          projectImage: starbsImg,
+          projectTitle: "Starbucks Replica",
+          projectAbout:
+            "A starbucks replica that showcases plain HTML5, CSS3 and JavaScript. This projects focuses on the basics with its mobile responsiveness.",
+          projectLink: "https://starbucks-replica-six.vercel.app/",
+          projectTech: [
+            {
+              img: "https://skillicons.dev/icons?i=html",
+            },
+            {
+              img: "https://skillicons.dev/icons?i=css",
+            },
+            {
+              img: "https://skillicons.dev/icons?i=js",
             },
           ],
         },
