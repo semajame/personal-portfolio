@@ -71,25 +71,25 @@ export default {
             },
           ],
         },
-        {
-          projectImage: techTalkImg,
-          projectTitle: "TechTalk Blog",
-          projectSoon: "(Coming Soon)",
-          projectAbout:
-            "A website blog about technology, and let's you surf blogs, this project focuses on user friendly interface.",
-          projectLink: "https://techtalk-blog.vercel.app/",
-          projectTech: [
-            {
-              img: "https://skillicons.dev/icons?i=vuejs",
-            },
-            {
-              img: "https://skillicons.dev/icons?i=scss",
-            },
-            {
-              img: "https://skillicons.dev/icons?i=bootstrap",
-            },
-          ],
-        },
+        // {
+        //   projectImage: techTalkImg,
+        //   projectTitle: "TechTalk Blog",
+        //   projectSoon: "(Coming Soon)",
+        //   projectAbout:
+        //     "A website blog about technology, and let's you surf blogs, this project focuses on user friendly interface.",
+        //   projectLink: "https://techtalk-blog.vercel.app/",
+        //   projectTech: [
+        //     {
+        //       img: "https://skillicons.dev/icons?i=vuejs",
+        //     },
+        //     {
+        //       img: "https://skillicons.dev/icons?i=scss",
+        //     },
+        //     {
+        //       img: "https://skillicons.dev/icons?i=bootstrap",
+        //     },
+        //   ],
+        // },
         {
           projectImage: hotelImg,
           projectTitle: "Grand Standard",
