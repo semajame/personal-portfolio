@@ -47,6 +47,7 @@
 <script>
 import unorkImg from "/src/assets/unork.png";
 import techTalkImg from "/src/assets/techtalk.png";
+import greeneryImg from "/src/assets/greenery.png";
 import hotelImg from "/src/assets/hotel.png";
 import starbsImg from "/src/assets/starbucks.png";
 export default {
@@ -103,6 +104,22 @@ export default {
             },
             {
               img: "https://skillicons.dev/icons?i=scss",
+            },
+          ],
+        },
+        {
+          projectImage: greeneryImg,
+          projectTitle: "The Greenery",
+          projectSoon: "(Coming Soon)",
+          projectAbout:
+            "A greenery ecommerce project that let's you navigate which type of plants and add them to cart. This project focuses on complex use of JavaScript and User Interface.",
+          projectLink: "https://the-greenery-ecommerce.vercel.app/",
+          projectTech: [
+            {
+              img: "https://skillicons.dev/icons?i=vuejs",
+            },
+            {
+              img: "https://skillicons.dev/icons?i=css",
             },
           ],
         },
