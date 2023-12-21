@@ -176,10 +176,10 @@ export default {
               img: "https://skillicons.dev/icons?i=bootstrap",
             },
             {
-              img: "https://skillicons.dev/icons?i=tailwind",
+              img: "https://skillicons.dev/icons?i=scss",
             },
             {
-              img: "https://skillicons.dev/icons?i=scss",
+              img: "https://skillicons.dev/icons?i=tailwind",
             },
             {
               img: "https://skillicons.dev/icons?i=vuejs",
