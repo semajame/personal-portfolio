@@ -47,6 +47,7 @@
 <script>
 import unorkImg from "/src/assets/unork.png";
 import techTalkImg from "/src/assets/techtalk.png";
+import cryptoImg from "/src/assets/crypto.png";
 import greeneryImg from "/src/assets/greenery.png";
 import hotelImg from "/src/assets/hotel.png";
 import starbsImg from "/src/assets/starbucks.png";
@@ -124,20 +125,18 @@ export default {
           ],
         },
         {
-          projectImage: starbsImg,
-          projectTitle: "Starbucks Replica",
+          projectImage: cryptoImg,
+          projectTitle: "Crypto Currency",
+          projectSoon: "(Coming Soon)",
           projectAbout:
-            "A starbucks replica that showcases plain HTML5, CSS3 and JavaScript. This projects focuses on the basics with its mobile responsiveness.",
-          projectLink: "https://starbucks-replica-six.vercel.app/",
+            "A Crypto website that utilizes the use of API, this website has real-time viewing about crypto currency.",
+          projectLink: "https://crypto-project-vue.vercel.app/",
           projectTech: [
             {
-              img: "https://skillicons.dev/icons?i=html",
+              img: "https://skillicons.dev/icons?i=vuejs",
             },
             {
-              img: "https://skillicons.dev/icons?i=css",
-            },
-            {
-              img: "https://skillicons.dev/icons?i=js",
+              img: "https://skillicons.dev/icons?i=tailwind",
             },
           ],
         },
