@@ -130,7 +130,7 @@ export default {
           projectSoon: "(Coming Soon)",
           projectAbout:
             "A Crypto website that utilizes the use of API, this website has real-time viewing about crypto currency.",
-          projectLink: "https://crypto-project-vue.vercel.app/",
+          projectLink: "https://crypto-currency-x.vercel.app/",
           projectTech: [
             {
               img: "https://skillicons.dev/icons?i=vuejs",
