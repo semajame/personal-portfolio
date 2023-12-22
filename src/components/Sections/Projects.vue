@@ -47,7 +47,7 @@
 <script>
 import unorkImg from "/src/assets/unork.png";
 import techTalkImg from "/src/assets/techtalk.png";
-import cryptoImg from "/src/assets/crypto.png";
+import cryptoImg from "/src/assets/crypto2.png";
 import greeneryImg from "/src/assets/greenery.png";
 import hotelImg from "/src/assets/hotel.png";
 import starbsImg from "/src/assets/starbucks.png";
