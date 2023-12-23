@@ -105,6 +105,9 @@ const scrollToDirective = {
           behavior: "smooth",
           top: scrollTo,
         });
+
+        ul.classList.toggle("active");
+        checkbox.checked = false;
       }
     });
   },

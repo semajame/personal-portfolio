@@ -578,7 +578,7 @@ footer p {
     top: 3.8rem;
     bottom: 0;
     align-items: start;
-    box-shadow: -1px 4px 5px 0px rgb(24, 24, 24);
+
     transition: 800ms ease-in-out;
   }
 
@@ -586,6 +586,7 @@ footer p {
     right: 0;
     padding-right: 10rem;
     transition: 800ms ease-in-out;
+    box-shadow: -300px 0px 5px 0px rgba(0, 0, 0, 0.75);
   }
 
   .right__header nav ul li {
