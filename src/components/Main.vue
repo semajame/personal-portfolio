@@ -77,10 +77,15 @@
   <About id="about" />
   <Projects id="projects" />
   <Contacts id="contact" />
+  <footer>
+    <div>
+      <a href="#" class="logo" v-scrollto="'home'">James.dev</a>
+      <p>Copyright © 2023. All rights are reserved</p>
+    </div>
+  </footer>
 </template>
 
 <script>
-import Header from "./Header.vue";
 import About from "../components/Sections/About.vue";
 import Projects from "../components/Sections/Projects.vue";
 import Contacts from "../components/Sections/Contacts.vue";
@@ -111,7 +116,6 @@ export default {
   },
 
   components: {
-    Header,
     About,
     Projects,
     Contacts,

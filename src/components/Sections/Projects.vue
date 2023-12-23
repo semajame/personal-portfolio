@@ -126,8 +126,8 @@ export default {
         },
         {
           projectImage: cryptoImg,
-          projectTitle: "Crypto Currency",
-          projectSoon: "(Coming Soon)",
+          projectTitle: "Cryptocurrency X",
+
           projectAbout:
             "A Crypto website that utilizes the use of API, this website has real-time viewing about crypto currency.",
           projectLink: "https://crypto-currency-x.vercel.app/",
