@@ -1,9 +1,9 @@
 <template>
   <header>
     <div class="left__header">
-      <a href="#" class="logo" v-scrollto="'home'" @click="toggleLogo"
-        >James.dev</a
-      >
+      <a href="#" class="logo" v-scrollto="'home'" @click="toggleLogo">{{
+        dev
+      }}</a>
     </div>
     <div class="right__header">
       <nav>
@@ -79,8 +79,8 @@
   <Contacts id="contact" />
   <footer>
     <div>
-      <a href="#" class="logo" v-scrollto="'home'">James.dev</a>
-      <p>Copyright © 2023. All rights are reserved</p>
+      <a href="#" class="logo" v-scrollto="'home'">{{ dev }}</a>
+      <p>{{ footerParagraph }}</p>
     </div>
   </footer>
 </template>
@@ -98,7 +98,7 @@ const scrollToDirective = {
       const targetElement = document.getElementById(targetId);
 
       if (targetElement) {
-        const offset = 100; // You can adjust this value for your desired margin or padding
+        const offset = 100;
         const scrollTo = targetElement.offsetTop - offset;
 
         window.scrollTo({
@@ -128,7 +128,6 @@ export default {
     toggleActive() {
       const ul = document.querySelector("#ul");
       ul.classList.toggle("active");
-      console.log("click");
     },
 
     toggleLogo() {
@@ -146,6 +145,8 @@ export default {
 
   data() {
     return {
+      dev: "James.dev",
+
       navLinks: [
         {
           link: "About",
@@ -163,6 +164,8 @@ export default {
 
       heroParagraph:
         "  Hi! I'm James Anquillano. A passionate Front-End Developer based in Cebu Philippines. 📍",
+
+      footerParagraph: "Copyright © 2023. All rights are reserved",
 
       techStack: [
         {
