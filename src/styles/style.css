@@ -622,11 +622,19 @@ footer p {
   p {
     font-size: 0.925rem;
   }
+
+  .tech__stack {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 500px) {
   main,
   section {
     padding: 8rem 2rem 0 2rem;
+  }
+
+  header {
+    padding: 1rem 2rem;
   }
 }
