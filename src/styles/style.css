@@ -307,7 +307,7 @@ h3 {
 
 .left__project img {
   border-radius: 10px;
-  width: 500px;
+  max-width: 500px;
 }
 
 .right__project {
