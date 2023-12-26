@@ -106,7 +106,7 @@ const scrollToDirective = {
           top: scrollTo,
         });
 
-        ul.classList.toggle("active");
+        ul.classList.remove("active");
         checkbox.checked = false;
       }
     });
