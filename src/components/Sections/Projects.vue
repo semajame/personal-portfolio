@@ -111,7 +111,7 @@ export default {
         {
           projectImage: greeneryImg,
           projectTitle: "The Greenery",
-          projectSoon: "(Coming Soon)",
+
           projectAbout:
             "A greenery ecommerce project that let's you navigate which type of plants and add them to cart. This project focuses on complex use of JavaScript and User Interface.",
           projectLink: "https://the-greenery-ecommerce.vercel.app/",
@@ -127,9 +127,8 @@ export default {
         {
           projectImage: cryptoImg,
           projectTitle: "Cryptocurrency X",
-
           projectAbout:
-            "A Crypto website that utilizes the use of API, this website has real-time viewing about crypto currency.",
+            "A cryptocurrency-focused website that leverages API integration, providing users with real-time insights into the dynamic world of digital currencies.",
           projectLink: "https://crypto-currency-x.vercel.app/",
           projectTech: [
             {
