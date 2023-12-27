@@ -46,11 +46,10 @@
 
 <script>
 import unorkImg from "/src/assets/unork.png";
-import techTalkImg from "/src/assets/techtalk.png";
 import cryptoImg from "/src/assets/crypto2.png";
 import greeneryImg from "/src/assets/greenery.png";
 import hotelImg from "/src/assets/hotel.png";
-import starbsImg from "/src/assets/starbucks.png";
+
 export default {
   data() {
     return {
@@ -95,7 +94,7 @@ export default {
         {
           projectImage: hotelImg,
           projectTitle: "Grand Standard",
-          projectSoon: "(Coming Soon)",
+
           projectAbout:
             "A hotel website that the user can browse rooms, and dines. This project focuses on user interfaces and medium flow of the website.",
           projectLink: "https://grand-standard-hotel.vercel.app/",
@@ -111,7 +110,7 @@ export default {
         {
           projectImage: greeneryImg,
           projectTitle: "The Greenery",
-
+          projectSoon: "(Coming Soon)",
           projectAbout:
             "A greenery ecommerce project that let's you navigate which type of plants and add them to cart. This project focuses on complex use of JavaScript and User Interface.",
           projectLink: "https://the-greenery-ecommerce.vercel.app/",
