@@ -1,9 +1,7 @@
 <template>
   <header>
     <div class="left__header">
-      <a href="#" class="logo" v-scrollto="'home'" @click="toggleLogo">{{
-        dev
-      }}</a>
+      <a href="#" class="logo" v-scrollto="'home'">{{ dev }}</a>
     </div>
     <div class="right__header">
       <nav>
@@ -23,7 +21,7 @@
     </div>
 
     <label class="hamburger__container">
-      <input type="checkbox" @click="toggleActive" id="checkbox" />
+      <input type="checkbox" @click="toggleNav" id="checkbox" />
       <div class="checkmark">
         <span></span>
         <span></span>
@@ -90,6 +88,8 @@ import About from "../components/Sections/About.vue";
 import Projects from "../components/Sections/Projects.vue";
 import Contacts from "../components/Sections/Contacts.vue";
 
+import { ref, onMounted } from "vue";
+
 const scrollToDirective = {
   mounted(el, binding) {
     el.addEventListener("click", (event) => {
@@ -118,29 +118,33 @@ export default {
     scrollto: scrollToDirective,
   },
 
+  setup() {
+    const ul = ref(null);
+    const checkbox = ref(null);
+
+    const toggleNav = () => {
+      if (ul.value) {
+        ul.value.classList.toggle("active");
+      }
+    };
+
+    const initializeRefs = () => {
+      ul.value = document.querySelector("#ul");
+      checkbox.value = document.querySelector("#checkbox");
+    };
+
+    // Call initializeRefs when the component is mounted
+    onMounted(initializeRefs);
+
+    return {
+      toggleNav,
+    };
+  },
+
   components: {
     About,
     Projects,
     Contacts,
-  },
-
-  methods: {
-    toggleActive() {
-      const ul = document.querySelector("#ul");
-      ul.classList.toggle("active");
-    },
-
-    toggleLogo() {
-      const ul = document.querySelector("#ul");
-      const checkbox = document.querySelector("#checkbox");
-      checkbox.checked = false;
-      ul.classList.remove("active");
-    },
-
-    created() {
-      const ul = document.querySelector("#ul");
-      ul.addEventListener("click", this.toggleActive, this.toggleLogo);
-    },
   },
 
   data() {
