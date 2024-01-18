@@ -121,7 +121,7 @@ export default {
               img: "https://skillicons.dev/icons?i=vuejs",
             },
             {
-              img: "https://skillicons.dev/icons?i=css",
+              img: "https://skillicons.dev/icons?i=tailwind",
             },
           ],
         },
