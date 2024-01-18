@@ -301,13 +301,13 @@ h3 {
 
 .left__project {
   display: flex;
-
   gap: 2rem;
 }
 
 .left__project img {
   border-radius: 10px;
   max-width: 500px;
+  height: 100%;
 }
 
 .right__project {

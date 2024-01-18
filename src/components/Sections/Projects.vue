@@ -12,11 +12,13 @@
       <div class="projects" v-for="(items, index) in projects" :key="index">
         <div class="projects__web__container">
           <div class="left__project">
-            <img
-              :src="items.projectImage"
-              alt="Project Image"
-              class="project__image"
-            />
+            <div class="project__image">
+              <img
+                :src="items.projectImage"
+                alt="Project Image"
+                class="project__image"
+              />
+            </div>
             <div class="right__project">
               <h3>
                 {{ items.projectTitle }} <span>{{ items.projectSoon }}</span>
