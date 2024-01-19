@@ -12,32 +12,30 @@
       <div class="projects" v-for="(items, index) in projects" :key="index">
         <div class="projects__web__container">
           <div class="left__project">
-            <div class="project__image">
+            <img
+              :src="items.projectImage"
+              alt="Project Image"
+              class="project__image"
+            />
+          </div>
+          <div class="right__project">
+            <h3>
+              {{ items.projectTitle }} <span>{{ items.projectSoon }}</span>
+            </h3>
+            <p>{{ items.projectAbout }}</p>
+
+            <div class="project__techstack">
               <img
-                :src="items.projectImage"
-                alt="Project Image"
-                class="project__image"
+                :src="tech.img"
+                alt="Tech Stack"
+                v-for="(tech, index) in items.projectTech"
+                :key="index"
               />
             </div>
-            <div class="right__project">
-              <h3>
-                {{ items.projectTitle }} <span>{{ items.projectSoon }}</span>
-              </h3>
-              <p>{{ items.projectAbout }}</p>
-
-              <div class="project__techstack">
-                <img
-                  :src="tech.img"
-                  alt="Tech Stack"
-                  v-for="(tech, index) in items.projectTech"
-                  :key="index"
-                />
-              </div>
-              <div class="project__links">
-                <a :href="items.projectLink" target="_blank"
-                  >Live Demo <img src="/src/assets/arrow.svg" alt="Demo Arrow"
-                /></a>
-              </div>
+            <div class="project__links">
+              <a :href="items.projectLink" target="_blank"
+                >Live Demo <img src="/src/assets/arrow.svg" alt="Demo Arrow"
+              /></a>
             </div>
           </div>
         </div>
