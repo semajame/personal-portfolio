@@ -534,6 +534,7 @@ footer p {
 
   .projects__web__container {
     flex-direction: column !important;
+    align-items: center;
   }
 
   .left__project img {
