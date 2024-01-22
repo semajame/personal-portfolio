@@ -29,7 +29,7 @@
       </div>
     </label>
   </header>
-  <main id="home">
+  <main id="home" data-aos="fade-up">
     <div class="hero__container">
       <div class="left__main">
         <h1>Front-End Web <br />Developer</h1>
@@ -72,9 +72,9 @@
     </div>
   </main>
 
-  <About id="about" />
-  <Projects id="projects" />
-  <Contacts id="contact" />
+  <About id="about" data-aos="fade-up" />
+  <Projects id="projects" data-aos="fade-up" />
+  <Contacts id="contact" data-aos="fade-up" />
   <footer>
     <div>
       <a href="#" class="logo" v-scrollto="'home'">{{ dev }}</a>
@@ -87,6 +87,11 @@
 import About from "../components/Sections/About.vue";
 import Projects from "../components/Sections/Projects.vue";
 import Contacts from "../components/Sections/Contacts.vue";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 import { ref, onMounted } from "vue";
 
