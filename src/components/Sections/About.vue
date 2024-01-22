@@ -1,8 +1,6 @@
 <template>
   <section class="about__container" id="about">
-    <div class="left__about laptop">
-      <img :src="memoji" alt="Memoji" class="memoji" />
-    </div>
+    <div class="left__about laptop"></div>
     <div class="right__about">
       <div>
         <h2>About Me</h2>
@@ -21,12 +19,9 @@
 </template>
 
 <script>
-import memoji from "/src/assets/memoji.png";
 export default {
   data() {
     return {
-      memoji,
-
       firstPara:
         "Hi! I'm a passionate Frontend Developer from Cebu, Philippines. I specialize in crafting visually appealing and user-friendly interfaces with the use of my technology stack.",
 
