@@ -110,9 +110,9 @@ export default {
         {
           projectImage: greeneryImg,
           projectTitle: "The Greenery",
-          projectSoon: "(Coming Soon)",
+
           projectAbout:
-            "A greenery ecommerce project that let's you navigate which type of plants and add and remove them from cart. This project focuses on complex use of JavaScript and User Interface.",
+            "A greenery ecommerce project that let's you navigate which type of plants and add and remove them to cart. This project focuses on complex use of JavaScript and User Interface.",
           projectLink: "https://greenery-ecommerce.vercel.app/",
           projectTech: [
             {
