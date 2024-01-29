@@ -47,7 +47,7 @@
         <img src="./assets/me.jpg" alt="Profile" />
       </div>
     </div>
-    <div class="tech__stack__container">
+    <!-- <div class="tech__stack__container">
       <div class="tech__stack">
         <span> Tech Stack </span>
         <span>|</span>
@@ -75,9 +75,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </main>
-
+  <TechStack data-aos="fade-up" />
   <About id="about" data-aos="fade-up" />
   <Projects id="projects" data-aos="fade-up" />
   <Contacts id="contact" data-aos="fade-up" />
@@ -90,6 +90,7 @@
 </template>
 
 <script>
+import TechStack from "./components/Sections/TechStack.vue";
 import About from "./components/Sections/About.vue";
 import Projects from "./components/Sections/Projects.vue";
 import Contacts from "./components/Sections/Contacts.vue";
@@ -156,6 +157,7 @@ export default {
     About,
     Projects,
     Contacts,
+    TechStack,
   },
 
   data() {
