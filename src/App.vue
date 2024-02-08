@@ -29,6 +29,7 @@
       </div>
     </label>
   </header>
+
   <main id="home" data-aos="fade-up">
     <div class="hero__container">
       <div class="left__main">
