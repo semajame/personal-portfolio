@@ -27,21 +27,22 @@
 
 <script setup>
 const techP =
-  "   A technology stack is the foundation of your digital creation, like the building blocks and tools used to construct it. I am currently learning NodeJS and ExpressJS.";
+  "   A technology stack is the foundation of your digital creation, like the building blocks and tools used to construct it. I am currently learning NodeJS, ExpressJS and MongoDB.";
 const techStack = [
   {
     images: [
       {
-        img: "https://skillicons.dev/icons?i=html",
-        alt: "html",
-      },
-      {
-        img: "https://skillicons.dev/icons?i=css",
-        alt: "css",
-      },
-      {
         img: "https://skillicons.dev/icons?i=js",
-        alt: "js",
+        alt: "javascript",
+      },
+
+      {
+        img: "https://skillicons.dev/icons?i=typescript",
+        alt: "typescript",
+      },
+      {
+        img: "https://skillicons.dev/icons?i=figma",
+        alt: "figma",
       },
       {
         img: "https://skillicons.dev/icons?i=bootstrap",
@@ -68,8 +69,8 @@ const techStack = [
         alt: "expressjs",
       },
       {
-        img: "https://skillicons.dev/icons?i=figma",
-        alt: "figma",
+        img: "https://skillicons.dev/icons?i=mongodb",
+        alt: "mongodb",
       },
     ],
   },
