@@ -183,7 +183,7 @@ export default {
       heroParagraph:
         "  Hi! I'm James Anquillano. A passionate Front-End Developer based in Cebu Philippines. 📍",
 
-      footerParagraph: "Copyright © 2023. All rights are reserved",
+      footerParagraph: "Copyright © 2024. All rights are reserved",
 
       techStack: [
         {
