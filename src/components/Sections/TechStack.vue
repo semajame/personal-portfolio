@@ -69,8 +69,8 @@ const techStack = [
         alt: "expressjs",
       },
       {
-        img: "https://skillicons.dev/icons?i=mongodb",
-        alt: "mongodb",
+        img: "https://skillicons.dev/icons?i=mysql",
+        alt: "mysql",
       },
     ],
   },
