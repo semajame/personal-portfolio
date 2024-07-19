@@ -61,17 +61,17 @@ const techStack = [
         alt: "vuejs",
       },
       {
-        img: "https://skillicons.dev/icons?i=nodejs",
-        alt: "nodejs",
+        img: "https://skillicons.dev/icons?i=nuxt",
+        alt: "nuxt",
       },
-      {
-        img: "https://skillicons.dev/icons?i=express",
-        alt: "expressjs",
-      },
-      {
-        img: "https://skillicons.dev/icons?i=mysql",
-        alt: "mysql",
-      },
+      // {
+      //   img: "https://skillicons.dev/icons?i=express",
+      //   alt: "expressjs",
+      // },
+      // {
+      //   img: "https://skillicons.dev/icons?i=mysql",
+      //   alt: "mysql",
+      // },
     ],
   },
 ];
