@@ -45,7 +45,7 @@
         </div>
       </div>
       <div class="right__main">
-        <img src="./assets/me.jpg" alt="Profile" />
+        <img src="./assets/james.jpg" alt="Profile" />
       </div>
     </div>
     <!-- <div class="tech__stack__container">
